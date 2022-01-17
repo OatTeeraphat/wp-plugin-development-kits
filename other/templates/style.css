@@ -1,0 +1,736 @@
+/*
+Theme Name: Performax
+Theme URI: https://wordpress.org/themes/twentyseventeen/
+Author: Incommon Studio
+Author URI: https://wordpress.org/
+Description: Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
+Version: multilang
+Requires at least: 4.7
+Requires PHP: 5.2.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentyseventeen
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Kanit:400,600,700&display=swap');
+
+body {
+	font-family: 'Kanit', sans-serif;
+	margin-top: 75px;
+}
+a{
+	font-size: 0.75em;
+}
+.h4,
+h4 {
+	line-height: 1.1;
+	font-weight: 600;
+	letter-spacing: 0.75px;
+	font-size: 1.75em;
+	margin-bottom: 1em;
+}
+
+.h3,
+h3 {
+	/* line-height: 1.1; */
+	font-weight: 600;
+	/* letter-spacing: 0.75px; */
+	font-size: 1.75em;
+	margin-bottom: 1em;
+}
+
+.h2,
+h2 {
+	font-size: 2.5em;
+	color: #004085;
+	font-weight: 600;
+}
+
+.btn-primary {
+	border-radius: 0;
+	font-weight: 600;
+	padding: 10px;
+	min-width: 200px;
+	background-color: #2f5497;
+	border-color: #2f5497;
+}
+
+.btn-outline-primary {
+	border-radius: 0;
+	font-weight: 600;
+	padding: 10px;
+	min-width: 200px;
+}
+
+.jumbotron-top {
+	height: 50vh !important;
+}
+
+.bg-blue {
+	background-color: #2F5597;
+}
+
+.h-60 {
+	width: 100%;
+	height: 60vh !important;
+}
+
+.h-30 {
+	width: 100%;
+	height: 30vh !important;
+}
+
+.h-30-2{
+	width: 40%;
+	padding: 0 !important;
+}
+
+.h-30x2{
+	
+position: relative;
+	
+top: -1px;
+}
+
+.h-10 {
+	width: 80%;
+	height: 10vh !important;
+}
+
+.h-10-w-100 {
+	height: 10vh !important;
+}
+
+.card {
+	border: 0
+}
+
+.card-contact {
+	background: #1A3A72;
+	border-left: 10px solid #01A9E5;
+	border-top-right-radius: 50px;
+	width: 100%;
+	max-width: 960px;
+}
+
+.container-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+}
+
+.social {
+	position: relative;
+	display: inline-block;
+	padding: 0 25px;
+}
+
+.card-header {
+	border-bottom: 0;
+	background-color: transparent;
+}
+
+.container-qr {
+	text-align: center;
+	padding: 40px 50px 30px;
+}
+
+.image-container-210 {
+width: 100%;
+	height: 210px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#container {}
+
+#container .image-container {
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#container .image-container img {
+	width: auto;
+	height: 100%;
+}
+
+#container-400 {}
+
+#container-400 .image-container {
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#container-400 .image-container img {
+	width: auto;
+	height: 100%;
+}
+
+#container-60 {
+	width: 100%;
+	height: 60vh;
+	display: table;
+	background-color: white;
+}
+
+#container-60 .image-container {
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+#container-60 .image-container img {
+	max-width: 100%;
+	height: 60vh;
+}
+
+#container-30 {
+	width: 100%;
+	height: 30vh;
+	display: table;
+	background-color: white;
+}
+
+#container-30 .image-container {
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+#container-30 .image-container img {
+	max-width: 100%;
+	height: 30vh;
+}
+
+#container-head {
+	width: 100%;
+	height: 500px;
+	display: table;
+	background-color: white;
+}
+
+#container-head .image-container {
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+#container-head .image-container img {
+	max-width: 100%;
+	height: 500px;
+	border-top-left-radius: 50px;
+}
+
+#container-sub {}
+
+#container-sub .image-container {
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#container-sub .image-container img {
+	width: auto;
+	height: 100%;
+}
+
+.text-boder {
+	border-left: 2px solid #2F5597;
+	padding: 0 15px 0 30px;
+}
+
+.head-boder {
+	border-left: 2px solid #2F5597;
+	padding-left: 20px;
+}
+
+.poster {
+	border: aliceblue;
+	background-color: #E2E2E2;
+	margin: auto;
+	padding: 50px;
+}
+
+.page-title-2 {
+	background-image: url("pic/Mask Group 15.JPG");
+	position: relative;
+	margin-top: 50px;
+	background-size: cover;
+	height: 300px;
+	z-index: -1;
+	border-bottom: 20px solid #1A3A72;
+	height: 250px;
+}
+
+.page-title-2:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(47, 85, 151, 0.50);
+	z-index: -1;
+}
+
+.page-title-2 .container {
+	text-align: center;
+	padding-top: 120px;
+}
+
+.page-title-3 {
+	background-image: url("pic/Mask Group 12.JPG");
+	position: relative;
+	margin-top: 50px;
+	background-size: cover;
+	height: 250px;
+	z-index: -1;
+	border-bottom: 20px solid #1A3A72;
+}
+
+.page-title-3:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(47, 85, 151, 0.50);
+	z-index: -1;
+}
+
+.page-title-3 .container {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	padding-top: 30px;
+}
+
+.bg-darkblue {
+	background-color: #1A3A72;
+}
+
+.page-title-5 {
+	position: relative;
+	margin-top: 50px;
+	background-size: cover;
+	height: 400px;
+	background-image: url("pic/Mask Group 23.JPG");
+	z-index: -1;
+}
+
+.page-title-5:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(47, 85, 151, 0.75);
+	z-index: -1;
+}
+
+.page-title-5 .container {
+	padding-top: 150px;
+}
+
+.center {
+	margin: auto;
+	width: 50%;
+	padding: 5px;
+}
+.left{
+
+	width: 50%;
+	padding: 5px;
+
+}
+
+.carousel-caption {
+	top: 35%;
+}
+
+.carousel-caption h1 {
+	line-height: 1.1;
+	font-weight: 600;
+	letter-spacing: 0.75px;
+	font-size: 2.75em;
+}
+
+.carousel-caption h1 span {
+	padding-top: 15px;
+	display: block;
+}
+
+.carousel-caption button {}
+
+.carousel-content {}
+
+.carousel-item {
+	height: 600px;
+}
+
+.carousel-image {
+	height: 600px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+	.h-60, .h-30 {
+		height: 235px !important;
+	}
+	.h-30x2{
+		height: 60vh !important;
+	}
+	#container {}
+	#container .image-container {
+		height: 210px;
+	}
+	#container .image-container img {}
+	#container-head {
+		width: 100%;
+		height: 300px;
+		display: table;
+		background-color: white;
+	}
+	#container-head .image-container {
+		text-align: center;
+		vertical-align: middle;
+		display: table-cell;
+	}
+	#container-head .image-container img {
+		width: 100%;
+		height: auto;
+	}
+	#container-60 {
+		width: 100%;
+		height: 235px;
+		display: table;
+		background-color: white;
+	}
+	#container-60 .image-container {
+		text-align: center;
+		vertical-align: middle;
+		display: table-cell;
+	}
+	#container-60 .image-container img {
+		width: 100%;
+		height: 210px;
+	}
+	.social {
+		position: relative;
+		display: inline-block;
+		padding: 0 15px;
+	}
+}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 768px) {
+	#container-400 .image-container {
+		width: 100%;
+		height: 150px;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#container-400 .image-container img {
+		width: auto;
+		height: 100%;
+	}
+	.gridbox-box{
+		display: none;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.carousel-caption {
+		top: 27.5%;
+		font-size: 0.8em;
+		text-align: center !important;
+	}
+	#container .image-container {
+		height: 210px;
+		background: #000;
+	}
+	#container .image-container img {}
+	.page-title-2 {
+		top: 27.5%;
+		font-size: 0.8em;
+		text-align: center !important;
+		height: 250px;
+	}
+	.page-title-2 .container {
+		padding-top: 110px;
+	}
+	.page-title-5 .container {
+		padding-top: 130px;
+	}
+	#container-sub .image-container {}
+	#container-sub .image-container img {}
+	
+	.social p {
+		line-height: 1;
+		font-size: 0.8em;
+		margin: 1em;
+	}
+	.card-header {
+		padding: 20px 0;
+	}
+	.card-body{
+		padding: 0;
+	}
+	.head-boder h4 {
+		font-size: 1.5em;
+	}
+	.bottom-m-10{
+		bottom: 15px;
+	}
+	.p-em{
+		flex: 1 1 auto;
+    padding: 1.25rem;
+	}
+	.card-text{
+
+padding-top: 1em;
+
+}
+.card-body h3{
+	padding-top: 1em;
+}
+.context-m{
+	display: flex;
+    justify-content: center;
+    padding: 0 10px 30px !important;
+}
+.gridbox-box{
+    display: none;
+}
+}
+
+
+/* custom */
+
+.head-boder h4 {
+	color: #1A3A72;
+	font-weight: 100;
+}
+
+.custom-select {
+	width: 50%;
+	border-radius: 0;
+	border-color: #1A3A72;
+}
+
+.card-header h5 {
+	color: #1A3A72;
+}
+
+.carousel-item:before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: rgba(71, 97, 171, 0.25);
+	position: absolute;
+	bottom: 0;
+	border-bottom: 20px solid #004085;
+}
+
+.warpper-text {
+	font-size: 1.2em;
+	text-align: center !important;
+}
+
+.warpper-text h1 {
+	line-height: 1.1;
+	font-weight: 600;
+	letter-spacing: 0.75px;
+	font-size: 1.75em;
+}
+
+.text-dark-blue {
+	color: #004085;
+	;
+}
+
+.bold-18 {
+	line-height: 1.1;
+	font-weight: 600;
+	letter-spacing: 0.75px;
+	font-size: 1.3em;
+}
+
+.warpper-text-team {
+	/* top: 27.5%; */
+	font-size: 0.6em;
+}
+
+.warpper-text-team h1 {
+	line-height: 1.1;
+	font-weight: 600;
+	letter-spacing: 0.75px;
+	font-size: 3.75em;
+}
+
+.warpper-text-team p {
+	line-height: 1.5;
+	/* font-weight: 600; */
+	letter-spacing: 0.75px;
+	font-size: 1.75em;
+}
+
+.h4-light h4 {
+	color: #1A3A72;
+	font-weight: 100;
+	padding-top: 1em;
+}
+
+.card-body h4 {
+	padding-top: 1em;
+	margin: 0;
+	padding-bottom: 0.5em;
+}
+.card-text h3{
+	
+padding-top: 1em;
+}
+.contact-text-head{
+
+font-weight: 600;
+}
+
+.image-container{
+	position: relative;
+}
+.nav-item a{
+
+font-size: 1em;
+}
+.gridbox{}
+.gridbox-img{height: 100%;background-size: 120%;background-repeat: no-repeat;background-position: center top;background-color: #f5f6f8;}
+
+.gridbox-content{position: absolute;top: 0;text-align: left;padding: 30px;color: #fff;z-index: 2;}
+.gridbox-content h2{ color: #fff; font-size: 1.8em; margin-bottom: 5px; }
+.gridbox-content p{ line-height: 1.2em; }
+
+.gridbox-fade{position: absolute;width: 100%;height: 75%;top: 0;background: linear-gradient(180deg, #2F5597 0%, rgba(2,0,36,0) 100%);}
+.gridbox-button{position: absolute;width: 100%;height: 100%;z-index: 1;top: 0;background: #1a3a722e;}
+.gridbox-button a{opacity: 0;position: absolute;top: 50%;left: 0;right: 0;max-width: 100px;margin: 0 auto;border-color: #004085;color: #004085;background: rgb(255, 255, 255);transition: all 0.2s ease;}
+.gridbox-button:hover a{ opacity: 1; }
+.gridbox-button a:hover{ background-color: #004085; border-color: #004085; top: calc(50% + 24px); }
+.gridbox-box{
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    padding: 20px;
+    color: #000;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 70%;
+    background: #fff;
+}
+.gridbox-box p{
+    margin: 0.5em 1em 1em;
+}
+.circle{
+    border-color: #fff;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50%;
+    padding: 20px;
+}
+.p-contact{
+	
+padding: 3rem;
+	
+padding-top: 0;
+}
+
+.tracking-title{
+	background-size: auto 100%;
+	background-position: center;
+	padding: 135px 0 110px 0 !important;
+	position: relative;
+	z-index: 3;
+	min-height: 450px;
+	height: calc(100vh - 300px);
+}
+
+.tracking-title input{
+	font-size: 2em;
+	padding: 1rem .75rem;
+	height: 2.5em;
+	margin-top: 45px;
+	text-align: center;
+	max-width: 540px;
+	margin: 30px auto 0;
+	border-radius: 0;
+}
+
+.tracking-title button{
+	min-width: inherit;
+	width: 120px;
+	background: #2f5497;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.tracking-title:after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #2f54976e;
+	top: 0;
+	z-index: 1;
+}
+
+.tracking-head{
+	position: absolute;
+	z-index: 3;
+	top: 12vh;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  	.rounded-circle-container{}
+	.rounded-circle-custom{}
+	.rounded-circle-container p{}
+}
